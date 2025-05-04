@@ -1,0 +1,20 @@
+[
+  {
+    "text": "Cine are prioritate într-o intersecție nedirijată?",
+    "options": [
+      "Vehiculul care vine din dreapta",
+      "Vehiculul mai mare",
+      "Vehiculul mai rapid"
+    ],
+    "correct": [0]
+  },
+  {
+    "text": "Ce semn acordă prioritate?",
+    "options": [
+      "STOP",
+      "Cedează trecerea",
+      "Interzis"
+    ],
+    "correct": [0, 1]
+  }
+]

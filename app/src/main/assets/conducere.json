@@ -1,0 +1,20 @@
+[
+  {
+    "text": "Ce semne indică interzis?",
+    "options": [
+      "Semn rotund roșu cu linie albă",
+      "Indicator STOP",
+      "Semn triunghiular cu margine roșie"
+    ],
+    "correct": [0, 1]
+  },
+  {
+    "text": "Care dintre următoarele indicatoare avertizează?",
+    "options": [
+      "Triunghi galben cu simbol negru",
+      "Semn rotund albastru",
+      "Pătrat albastru cu săgeți"
+    ],
+    "correct": [0]
+  }
+]

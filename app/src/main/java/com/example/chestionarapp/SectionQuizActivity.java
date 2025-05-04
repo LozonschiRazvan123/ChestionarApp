@@ -9,7 +9,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.chestionarapp.QuizActivity;
 import com.example.chestionarapp.R;
-
 public class SectionQuizActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,10 +22,10 @@ public class SectionQuizActivity extends AppCompatActivity {
         sectionList.setAdapter(adapter);
 
         sectionList.setOnItemClickListener((parent, view, position, id) -> {
+            String sectionFile = sections[position].toLowerCase() + ".json";
             Intent intent = new Intent(this, QuizActivity.class);
-            intent.putExtra("section", sections[position]);
+            intent.putExtra("filename", sectionFile);
             startActivity(intent);
         });
-
     }
 }

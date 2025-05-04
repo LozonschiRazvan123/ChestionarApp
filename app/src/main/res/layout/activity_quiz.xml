@@ -1,8 +1,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:padding="16dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/progressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Întrebarea X din Y"
+        android:textStyle="italic" />
 
     <TextView
         android:id="@+id/questionText"
@@ -11,32 +18,52 @@
         android:text="Întrebare"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:layout_marginBottom="24dp" />
+        android:layout_marginBottom="12dp" />
 
     <Button
         android:id="@+id/optionA"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Opțiune A" />
+        android:text="Răspuns A" />
 
     <Button
         android:id="@+id/optionB"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Opțiune B"
-        android:layout_marginTop="8dp" />
+        android:text="Răspuns B" />
 
     <Button
         android:id="@+id/optionC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Opțiune C"
-        android:layout_marginTop="8dp" />
+        android:text="Răspuns C" />
 
-    <TextView
-        android:id="@+id/scoreText"
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Înapoi" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Următorul"
+            android:layout_marginStart="24dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGoToSections"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Scor: 0"
-        android:layout_marginTop="16dp" />
+        android:text="Înapoi la secțiuni"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
 </LinearLayout>

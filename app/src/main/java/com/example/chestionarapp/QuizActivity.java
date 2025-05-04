@@ -7,53 +7,143 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class QuizActivity extends AppCompatActivity {
+
+    private TextView questionText, progressText;
+    private Button[] buttons;
+    private Button btnNext, btnBack, btnGoToSections;
+
     private List<Question> questions;
     private int currentIndex = 0;
     private int score = 0;
-    private TextView questionText, scoreText;
-    private Button[] optionButtons = new Button[3];
+    private boolean answered = false;
+    private List<Integer> userAnswers = new ArrayList<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
 
+        // Legăm componentele din layout
+        progressText = findViewById(R.id.progressText);
         questionText = findViewById(R.id.questionText);
-        optionButtons[0] = findViewById(R.id.optionA);
-        optionButtons[1] = findViewById(R.id.optionB);
-        optionButtons[2] = findViewById(R.id.optionC);
-        scoreText = findViewById(R.id.scoreText);
+        buttons = new Button[]{
+                findViewById(R.id.optionA),
+                findViewById(R.id.optionB),
+                findViewById(R.id.optionC)
+        };
+        btnNext = findViewById(R.id.btnNext);
+        btnBack = findViewById(R.id.btnBack);
+        btnGoToSections = findViewById(R.id.btnGoToSections);
 
-        String section = getIntent().getStringExtra("section");
-        questions = QuestionLoader.loadQuestions(this, section.toLowerCase() + ".json");
+        // Încărcăm întrebările din JSON
+        String filename = getIntent().getStringExtra("filename");
+        questions = QuestionLoader.loadQuestions(this, filename);
 
-        showQuestion();
-    }
-
-    private void showQuestion() {
-        if (currentIndex >= questions.size()) {
-            Intent resultIntent = new Intent(this, ResultActivity.class);
-            resultIntent.putExtra("score", score);
-            resultIntent.putExtra("total", questions.size());
-            startActivity(resultIntent);
+        if (questions == null || questions.isEmpty()) {
             finish();
             return;
         }
 
-        Question q = questions.get(currentIndex);
-        questionText.setText(q.getText());
-        for (int i = 0; i < 3; i++) {
-            int index = i;
-            optionButtons[i].setText(q.getOptions().get(i));
-            optionButtons[i].setOnClickListener(v -> {
-                if (index == q.getCorrect()) score++;
-                currentIndex++;
-                showQuestion();
+        for (int i = 0; i < questions.size(); i++) {
+            userAnswers.add(-1);
+        }
+
+        showQuestion();
+
+        // Click pe opțiuni de răspuns
+        for (int i = 0; i < buttons.length; i++) {
+            int finalI = i;
+            buttons[i].setOnClickListener(v -> {
+                if (!answered) {
+                    answered = true;
+                    userAnswers.set(currentIndex, finalI);
+                    checkAnswer(finalI);
+                    btnNext.setEnabled(true);
+                }
             });
         }
 
-        scoreText.setText("Scor: " + score);
+        // Următoarea întrebare
+        btnNext.setOnClickListener(v -> {
+            if (currentIndex < questions.size() - 1) {
+                currentIndex++;
+                showQuestion();
+            } else {
+                Intent intent = new Intent(this, ResultActivity.class);
+                intent.putExtra("score", score);
+                intent.putExtra("total", questions.size());
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        // Înapoi la întrebarea precedentă
+        btnBack.setOnClickListener(v -> {
+            if (currentIndex > 0) {
+                currentIndex--;
+                showQuestion();
+            }
+        });
+
+        // Înapoi la secțiunile de chestionare
+        btnGoToSections.setOnClickListener(v -> {
+            Intent intent = new Intent(this, SectionQuizActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+            finish();
+        });
+    }
+
+    private void showQuestion() {
+        Question q = questions.get(currentIndex);
+        questionText.setText(q.getText());
+        progressText.setText("Întrebarea " + (currentIndex + 1) + " din " + questions.size());
+
+        for (int i = 0; i < buttons.length; i++) {
+            buttons[i].setText(q.getOptions().get(i));
+            buttons[i].setBackgroundColor(getResources().getColor(android.R.color.darker_gray));
+            buttons[i].setEnabled(true);
+        }
+
+        btnBack.setVisibility(currentIndex == 0 ? Button.GONE : Button.VISIBLE);
+        btnNext.setEnabled(false);
+        answered = false;
+
+        int savedAnswer = userAnswers.get(currentIndex);
+        if (savedAnswer != -1) {
+            answered = true;
+            checkAnswer(savedAnswer);
+            if (currentIndex < questions.size())
+                btnNext.setEnabled(true);
+        }
+    }
+
+    private void checkAnswer(int selectedIndex) {
+        Question q = questions.get(currentIndex);
+        List<Integer> correctList = q.getCorrect();
+
+        for (int i = 0; i < buttons.length; i++) {
+            buttons[i].setEnabled(false);
+            if (correctList.contains(i)) {
+                buttons[i].setBackgroundColor(getResources().getColor(android.R.color.holo_green_light));
+            } else if (i == selectedIndex) {
+                buttons[i].setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));
+            }
+        }
+
+        if (correctList.contains(selectedIndex)) {
+            score++;
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
+        // Blocăm butonul hardware pentru a rămâne în quiz
     }
 }
