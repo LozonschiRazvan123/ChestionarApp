@@ -4,6 +4,12 @@ import java.util.List;
 
 public class Question {
     private String text;
+    private String image;
+
+    public String getImage() {
+        return image;
+    }
+
     private List<String> options;
     private List<Integer> correct;
 

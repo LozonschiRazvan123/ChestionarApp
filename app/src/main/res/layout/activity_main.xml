@@ -11,15 +11,15 @@
         android:layout_height="wrap_content"
         android:text="Chestionare pe secțiuni" />
 
-   <!-- <Button
-        android:id="@+id/examBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Simulare examen" />
+    <!-- <Button
+         android:id="@+id/examBtn"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Simulare examen" />
 
-    <Button
-        android:id="@+id/legislationBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Legislație rutieră" />-->
+     <Button
+         android:id="@+id/legislationBtn"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Legislație rutieră" />-->
 </LinearLayout>

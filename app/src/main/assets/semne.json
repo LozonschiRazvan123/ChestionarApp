@@ -1,20 +1,374 @@
 [
   {
-    "text": "Ce semne indică interzis?",
+    "text": "Vă este permisă trecerea peste marcajul longitudinal din imagine?",
     "options": [
-      "Semn rotund roșu cu linie albă",
-      "Indicator STOP",
-      "Semn triunghiular cu margine roșie"
+      "da, deoarece linia discontinuă este cea mai apropiată de vehiculul pe care îl conduceți;",
+      "nu, deoarece este un marcaj dublu;",
+      "nu, deoarece în acest caz depășirea este interzisă."
     ],
-    "correct": [0, 1]
+    "correct": [
+      0
+    ],
+    "image": "imagini/399.jpeg",
+    "imageName": "399.jpeg"
   },
   {
-    "text": "Care dintre următoarele indicatoare avertizează?",
+    "text": "Indicatorul vă obligă:",
     "options": [
-      "Triunghi galben cu simbol negru",
-      "Semn rotund albastru",
-      "Pătrat albastru cu săgeți"
+      "să circulaţi înainte sau la dreapta în prima intersecţie;",
+      "să viraţi la stânga, deoarece accesul în celelalte direcţii este interzis;",
+      "să urmaţi traseul ocolitor, presemnalizat la dreapta."
     ],
-    "correct": [0]
+    "correct": [
+      0
+    ],
+    "image": "imagini/419.jpeg",
+    "imageName": "419.jpeg"
+  },
+  {
+    "text": "Acest indicator vă avertizează că urmează:",
+    "options": [
+      "alte pericole;",
+      "un drum fără marcaje;",
+      "un drum cu marcaje."
+    ],
+    "correct": [
+      0
+    ],
+    "image": "imagini/420.jpeg",
+    "imageName": "420.jpeg"
+  },
+  {
+    "text": "Puteţi depăşi în această situaţie, dacă vă aflaţi la volanul autoturismului?",
+    "options": [
+      "nu, deoarece treceţi de axul drumului;",
+      "da, manevra este regulamentară;",
+      "nu, deoarece marcajul orizontal interzice manevra."
+    ],
+    "correct": [
+      1
+    ],
+    "image": "imagini/424.jpeg",
+    "imageName": "424.jpeg"
+  },
+  {
+    "text": "La întâlnirea cărui indicator conducătorul auto nu are prioritate de trecere?",
+    "options": [
+      "„Prioritate pentru circulaţia din sens invers”;",
+      "„Prioritate faţă de circulaţia din sens invers”;",
+      "„Drum cu prioritate”."
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "text": "Indicatorul precizează:",
+    "options": [
+      "pe banda din stânga, vehiculele vor circula cu cel mult viteza indicată;",
+      "pe banda din dreapta, se poate circula fără restricţie de viteză;",
+      "pe banda din stânga, pot circula cei care se deplasează cel puţin cu viteza menţionată."
+    ],
+    "correct": [
+      2
+    ],
+    "image": "imagini/444.jpeg",
+    "imageName": "444.jpeg"
+  },
+  {
+    "text": "Cum procedați la întâlnirea panoului și a indicatorului?",
+    "options": [
+      "opriți, vă asigurați și acordați prioritate tuturor vehiculelor;",
+      "acordați prioritate vehiculelor care circulă din stânga;",
+      "acordați prioritate numai vehiculelor de transport public de persoane."
+    ],
+    "correct": [
+      0
+    ],
+    "image": "imagini/449.jpeg",
+    "imageName": "449.jpeg"
+  },
+  {
+    "text": "Ce obligaţii aveți la întâlnirea indicatorului „Animale“?",
+    "options": [
+      "să reduceţi viteza numai la semnalul celor care însoţesc animale;",
+      "circulaţi cu atenţie şi, dacă se impune, reduceţi viteza;",
+      "nu aveţi nicio obligaţie, deoarece indicatorul se adresează persoanelor care însoţesc animale."
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "text": "Puteţi trece cu autovehiculul peste o linie continuă dacă:",
+    "options": [
+      "linia continuă este însoţită de una discontinuă, iar aceasta din urmă este mai apropiată de sensul dvs. de deplasare;",
+      "aceasta este aplicată pe drumuri cu mai mult de o bandă pe sensul de mers;",
+      "aceasta separă sensurile de circulaţie."
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "text": "Marcajul aplicat pe marginea din dreapta a părţii carosabile, format dintr-o linie în zig-zag, semnifică:",
+    "options": [
+      "interzicerea staţionării;",
+      "interzicerea opririi;",
+      "alte pericole."
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "text": "Sfârșitul zonei în care oprirea a fost interzisă este anunțată de:",
+    "options": [
+      "ambele indicatoare;",
+      "indicatorul 1;",
+      "indicatorul 2, însoțit de panoul adițional."
+    ],
+    "correct": [
+      2
+    ],
+    "image": "imagini/466.jpeg",
+    "imageName": "466.jpeg"
+  },
+  {
+    "text": "Care dintre cele două indicatoare obligă la schimbarea direcției de mers spre dreapta, după depășirea locului unde este instalat?",
+    "options": [
+      "indicatorul 2;",
+      "indicatorul 1;",
+      "ambele indicatoare."
+    ],
+    "correct": [
+      0
+    ],
+    "image": "imagini/467.jpeg",
+    "imageName": "467.jpeg"
+  },
+  {
+    "text": "Care dintre indicatoare anunță sfârșitul drumului cu prioritate?",
+    "options": [
+      "niciunul;",
+      "ambele;",
+      "indicatorul 1."
+    ],
+    "correct": [
+      2
+    ],
+    "image": "imagini/479.jpeg",
+    "imageName": "479.jpeg"
+  },
+  {
+    "text": "Indicatorul din imagine semnifică:",
+    "options": [
+      "„Circulație în ambele sensuri“;",
+      "„Circulația interzisă în ambele sensuri“;",
+      "„Prioritate pentru circulația din sens invers“."
+    ],
+    "correct": [
+      0
+    ],
+    "image": "imagini/493.jpeg",
+    "imageName": "493.jpeg"
+  },
+  {
+    "text": "Ce vehicule aveți permisiunea de a depăși în situația dată?",
+    "options": [
+      "vehiculele cu tracțiune animală, bicicletele și motocicletele fără ataș;",
+      "autoturismele, motocicletele fără ataș și vehiculele cu tracțiune animală;",
+      "autovehiculele, cu excepția motocicletelor fără ataș."
+    ],
+    "correct": [
+      0
+    ],
+    "image": "imagini/494.jpeg",
+    "imageName": "494.jpeg"
+  },
+  {
+    "text": "Care dintre indicatoare obligă la schimbarea direcției de mers pe prima stradă la dreapta?",
+    "options": [
+      "indicatorul 1;",
+      "indicatorul 2;",
+      "ambele indicatoare."
+    ],
+    "correct": [
+      1
+    ],
+    "image": "imagini/495.jpeg",
+    "imageName": "495.jpeg"
+  },
+  {
+    "text": "În această situație opriți:",
+    "options": [
+      "la linia transversală;",
+      "în dreptul semaforului;",
+      "pe trecerea pentru pietoni."
+    ],
+    "correct": [
+      0
+    ],
+    "image": "imagini/498.jpeg",
+    "imageName": "498.jpeg"
+  },
+  {
+    "text": "Indicatorul vă avertizează că:",
+    "options": [
+      "drumul se intersectează cu o trecere la nivel cu linii de tramvai;",
+      "urmează o staţie de tramvai prevăzută cu refugiu pentru pietoni;",
+      "urmează o trecere la nivel cu o cale ferată fără bariere sau semibariere, cu semnalizare automată."
+    ],
+    "correct": [
+      0
+    ],
+    "image": "imagini/500.jpeg",
+    "imageName": "500.jpeg"
+  },
+  {
+    "text": "Ce semnificație are indicatorul din imagine?",
+    "options": [
+      "trecere cu bacul peste o apă;",
+      "drum denivelat;",
+      "accesul interzis vehiculelor care transportă substanțe de natură să polueze apele."
+    ],
+    "correct": [
+      2
+    ],
+    "image": "imagini/501.jpeg",
+    "imageName": "501.jpeg"
+  },
+  {
+    "text": "Marcajul longitudinal continuu, aplicat pe axul drumului, permite încălcarea lui:",
+    "options": [
+      "numai de către conducătorii de motociclete şi mopede;",
+      "numai de către vehiculele cu gabarit depăşit;",
+      "nu, în nicio situaţie."
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "text": "Indicatorul pe care îl întâlniţi vă informează că urmează:",
+    "options": [
+      "o ieşire de pe autostradă;",
+      "o staţie de taxare pentru circulaţia pe autostrăzi;",
+      "un loc special amenajat, unde puteţi face o pauză pentru odihnă."
+    ],
+    "correct": [
+      2
+    ],
+    "image": "imagini/510.jpeg",
+    "imageName": "510.jpeg"
+  },
+  {
+    "text": "Ce semnifică indicatorul?",
+    "options": [
+      "drum aglomerat;",
+      "interval obligatoriu între autovehicule;",
+      "distanță obligatorie de oprire."
+    ],
+    "correct": [
+      1
+    ],
+    "image": "imagini/517.jpeg",
+    "imageName": "517.jpeg"
+  },
+  {
+    "text": "Unde veți parca vehiculul la întâlnirea acestui indicator?",
+    "options": [
+      "pe direcția indicată, în parcarea special amenajată;",
+      "pe trotuar, perpendicular pe acesta;",
+      "pe trotuar, în lungul acestuia."
+    ],
+    "correct": [
+      0
+    ],
+    "image": "imagini/518.jpeg",
+    "imageName": "518.jpeg"
+  },
+  {
+    "text": "Ce obligaţii aveţi la întâlnirea indicatorului „Biciclişti“?",
+    "options": [
+      "să reduceţi viteza la maximum 30 km/h;",
+      "să circulaţi cu atenţie şi, dacă este cazul, acordaţi prioritate de trecere bicicliştilor care circulă pe pista special destinată;",
+      "nu aveţi nicio obligaţie, bicicliştii vă vor acorda prioritate."
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "text": "Semnificaţia unui indicator rutier, instalat deasupra unei benzi de circulaţie, este valabilă:",
+    "options": [
+      "numai pentru circulaţia rutieră care se desfăşoară în tunele;",
+      "numai pentru banda deasupra căreia este instalat;",
+      "pentru toată lăţimea părţii carosabile."
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "text": "Autoturismul alb din dreapta dvs. a oprit regulamentar?",
+    "options": [
+      "da, deoarece semnul adițional indică sfârșitul zonei unde oprirea este interzisă;",
+      "nu, deoarece se află în zona de acțiune a indicatorului „Oprirea interzisă“;",
+      "nu, deoarece indicatorul „Oprirea interzisă“ nu permite oprirea la o distanță mai mică de 100 m de acesta."
+    ],
+    "correct": [
+      1
+    ],
+    "image": "imagini/527.jpeg",
+    "imageName": "527.jpeg"
+  },
+  {
+    "text": "Ce semnificaţie are marcajul longitudinal aplicat sub forma unei linii continue pe axul drumurilor publice?",
+    "options": [
+      "ajută conducătorii auto să se orienteze pe timp de noapte;",
+      "nu permite încălcarea lui de către conducătorii de vehicule;",
+      "permite depăşirea vehiculelor."
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "text": "Pe ce bandă de circulaţie vă încadraţi pentru a vira la stânga, într-o intersecţie semnalizată cu astfel de marcaje?",
+    "options": [
+      "pe banda de circulaţie nr.1;",
+      "pe benzile de circulaţie nr. 2 si 3;",
+      "pe banda de circulaţie nr. 4."
+    ],
+    "correct": [
+      2
+    ],
+    "image": "imagini/555.jpeg",
+    "imageName": "555.jpeg"
+  },
+  {
+    "text": "Indicatorul interzice:",
+    "options": [
+      "depășirea;",
+      "virajul la stânga sau la dreapta;",
+      "întoarcerea."
+    ],
+    "correct": [
+      2
+    ],
+    "image": "imagini/556.jpeg",
+    "imageName": "556.jpeg"
+  },
+  {
+    "text": "Semnificaţia indicatoarelor de interzicere sau restricţie, în lipsa altor precizări, încetează:",
+    "options": [
+      "la 100 m de locul unde este instalat indicatorul;",
+      "la 200 m de locul unde este instalat indicatorul;",
+      "în prima intersecţie."
+    ],
+    "correct": [
+      2
+    ]
   }
 ]

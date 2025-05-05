@@ -1,27 +1,32 @@
 package com.example.chestionarapp;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
 public class QuizActivity extends AppCompatActivity {
-
-    private TextView questionText, progressText;
+    private ImageView questionImage;
+    private TextView questionText, progressText, correctCount, wrongCount;
     private CheckBox[] options;
     private Button btnNext, btnBack, btnGoToSections, btnCheckAnswer, btnSkip;
 
     private List<Question> questions;
     private int currentIndex = 0;
     private int score = 0;
+    private int correctAnswers = 0;
+    private int wrongAnswers = 0;
     private List<List<Integer>> userAnswers = new ArrayList<>();
     private boolean answered = false;
 
@@ -30,8 +35,12 @@ public class QuizActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
 
-        progressText = findViewById(R.id.progressText);
+        // Legături UI
+        questionImage = findViewById(R.id.questionImage);
         questionText = findViewById(R.id.questionText);
+        progressText = findViewById(R.id.progressText);
+        correctCount = findViewById(R.id.correctCount);
+        wrongCount = findViewById(R.id.wrongCount);
         options = new CheckBox[]{
                 findViewById(R.id.optionA),
                 findViewById(R.id.optionB),
@@ -40,9 +49,10 @@ public class QuizActivity extends AppCompatActivity {
         btnCheckAnswer = findViewById(R.id.btnCheckAnswer);
         btnNext = findViewById(R.id.btnNext);
         btnBack = findViewById(R.id.btnBack);
-        btnGoToSections = findViewById(R.id.btnGoToSections);
         btnSkip = findViewById(R.id.btnSkip);
+        btnGoToSections = findViewById(R.id.btnGoToSections);
 
+        // Încărcare întrebări
         String filename = getIntent().getStringExtra("filename");
         questions = QuestionLoader.loadQuestions(this, filename);
 
@@ -80,8 +90,14 @@ public class QuizActivity extends AppCompatActivity {
             }
 
             if (selected.containsAll(correct) && correct.containsAll(selected)) {
+                correctAnswers++;
                 score++;
+            } else {
+                wrongAnswers++;
             }
+
+            correctCount.setText("✔ " + correctAnswers);
+            wrongCount.setText("✖ " + wrongAnswers);
 
             btnCheckAnswer.setEnabled(false);
             btnNext.setEnabled(true);
@@ -104,21 +120,21 @@ public class QuizActivity extends AppCompatActivity {
             }
         });
 
-        btnGoToSections.setOnClickListener(v -> {
-            Intent intent = new Intent(this, SectionQuizActivity.class);
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-            startActivity(intent);
-            finish();
-        });
-
         btnSkip.setOnClickListener(v -> {
-            userAnswers.set(currentIndex, new ArrayList<>()); // păstrează ca "sărită"
+            userAnswers.set(currentIndex, new ArrayList<>());
             if (currentIndex < questions.size() - 1) {
                 currentIndex++;
                 showQuestion();
             } else {
                 goToFirstSkipped();
             }
+        });
+
+        btnGoToSections.setOnClickListener(v -> {
+            Intent intent = new Intent(this, SectionQuizActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+            finish();
         });
     }
 
@@ -134,9 +150,24 @@ public class QuizActivity extends AppCompatActivity {
             options[i].setTextColor(getResources().getColor(android.R.color.black));
         }
 
+        // Afișare imagine
+        if (q.getImage() != null && !q.getImage().isEmpty()) {
+            try {
+                InputStream is = getAssets().open(q.getImage());
+                Drawable d = Drawable.createFromStream(is, null);
+                questionImage.setImageDrawable(d);
+                questionImage.setVisibility(View.VISIBLE);
+            } catch (IOException e) {
+                questionImage.setVisibility(View.GONE);
+            }
+        } else {
+            questionImage.setVisibility(View.GONE);
+        }
+
         btnNext.setEnabled(false);
         btnCheckAnswer.setEnabled(true);
         btnBack.setVisibility(currentIndex == 0 ? View.GONE : View.VISIBLE);
+        btnNext.setVisibility(currentIndex == questions.size() - 1 ? View.GONE : View.VISIBLE);
         answered = false;
     }
 
