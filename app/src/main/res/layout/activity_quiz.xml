@@ -4,13 +4,23 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
+    <!-- PROGRESS sus -->
     <TextView
         android:id="@+id/progressText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Întrebarea X din Y"
-        android:textStyle="italic" />
+        android:textStyle="italic"
+        android:layout_gravity="center_horizontal"
+        android:textSize="14sp"
+        android:layout_marginTop="12dp" />
 
+    <!-- Spațiu vizual -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <!-- Întrebarea -->
     <TextView
         android:id="@+id/questionText"
         android:layout_width="wrap_content"
@@ -20,45 +30,67 @@
         android:textStyle="bold"
         android:layout_marginBottom="12dp" />
 
-    <Button
+    <!-- Opțiuni -->
+    <CheckBox
         android:id="@+id/optionA"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Răspuns A" />
-
-    <Button
+    <CheckBox
         android:id="@+id/optionB"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Răspuns B" />
-
-    <Button
+    <CheckBox
         android:id="@+id/optionC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Răspuns C" />
 
+    <!-- Buton verificare -->
+    <Button
+        android:id="@+id/btnCheckAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verifică răspunsul"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- Navigare întrebări -->
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
         android:gravity="center"
         android:layout_marginTop="16dp">
 
         <Button
             android:id="@+id/btnBack"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="Înapoi" />
 
         <Button
-            android:id="@+id/btnNext"
-            android:layout_width="wrap_content"
+            android:id="@+id/btnSkip"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Următorul"
-            android:layout_marginStart="24dp" />
+            android:layout_weight="1"
+            android:text="Sari peste" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Următoarea"
+            android:maxLines="1"
+            android:enabled="false" />
     </LinearLayout>
 
+
+    <!-- Buton secțiuni -->
     <Button
         android:id="@+id/btnGoToSections"
         android:layout_width="wrap_content"
