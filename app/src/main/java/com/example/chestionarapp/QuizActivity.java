@@ -50,7 +50,7 @@ public class QuizActivity extends AppCompatActivity {
         btnNext = findViewById(R.id.btnNext);
         btnBack = findViewById(R.id.btnBack);
         btnSkip = findViewById(R.id.btnSkip);
-        btnGoToSections = findViewById(R.id.btnGoToSections);
+        btnGoToSections = findViewById(R.id.sectionQuizBtn);
 
         // Încărcare întrebări
         String filename = getIntent().getStringExtra("filename");

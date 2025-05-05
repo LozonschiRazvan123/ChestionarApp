@@ -4,23 +4,27 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="#FDF6FF">
 
-    <!-- Linia cu scor și progres -->
+    <!-- 🔄 Linia cu scor și progres, cu fundal mov -->
     <LinearLayout
         android:id="@+id/statusRow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:background="#9C27B0"
         android:gravity="center_vertical"
-        android:layout_marginBottom="12dp">
+        android:padding="8dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="4dp">
 
         <TextView
             android:id="@+id/correctCount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="✔ 0"
-            android:textColor="#388E3C"
+            android:textColor="#30FF00"
             android:textStyle="bold"
             android:layout_marginEnd="16dp" />
 
@@ -29,9 +33,10 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Întrebarea 1 din 30"
+            android:textColor="#FFFFFF"
             android:textStyle="italic"
             android:gravity="center"
-            android:textSize="14sp"
+            android:textSize="15sp"
             android:layout_weight="1" />
 
         <TextView
@@ -39,7 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="✖ 0"
-            android:textColor="#D32F2F"
+            android:textColor="#FF0000"
             android:textStyle="bold"
             android:layout_marginStart="16dp" />
     </LinearLayout>
@@ -49,7 +54,7 @@
         android:id="@+id/questionCard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="20dp"
         app:cardCornerRadius="12dp"
         app:cardElevation="6dp"
         app:cardBackgroundColor="@android:color/white">
@@ -65,7 +70,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Întrebare"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="@android:color/black"
                 android:layout_marginBottom="8dp" />
@@ -83,16 +88,19 @@
     <!-- Opțiuni -->
     <CheckBox
         android:id="@+id/optionA"
+        android:textSize="17sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Răspuns A" />
     <CheckBox
         android:id="@+id/optionB"
+        android:textSize="17sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Răspuns B" />
     <CheckBox
         android:id="@+id/optionC"
+        android:textSize="17sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Răspuns C" />
@@ -139,13 +147,12 @@
             android:enabled="false" />
     </LinearLayout>
 
-    <!-- Buton secțiuni -->
+    <!-- Buton întoarcere la secțiuni -->
     <Button
-        android:id="@+id/btnGoToSections"
-        android:layout_width="wrap_content"
+        android:id="@+id/sectionQuizBtn"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Înapoi la secțiuni"
-        android:layout_gravity="center_horizontal"
+        android:text="Chestionar pe secțiuni"
         android:layout_marginTop="20dp" />
 
 </LinearLayout>
