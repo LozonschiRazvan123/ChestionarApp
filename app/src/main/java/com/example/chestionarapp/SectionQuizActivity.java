@@ -18,8 +18,9 @@ public class SectionQuizActivity extends AppCompatActivity {
         ListView sectionList = findViewById(R.id.sectionList);
         String[] sections = {"Semne", "Prioritate", "Conducere"};
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, sections);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.section_item, R.id.sectionName, sections);
         sectionList.setAdapter(adapter);
+
 
         sectionList.setOnItemClickListener((parent, view, position, id) -> {
             String sectionFile = sections[position].toLowerCase() + ".json";

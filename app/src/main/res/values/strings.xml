@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ChestionarApp</string>
+    <string name="section_name">Nume secțiune</string>
+
 </resources>
