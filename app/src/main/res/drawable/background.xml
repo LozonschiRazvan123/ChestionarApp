@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Culoare de fundal (alb-gri deschis) -->
+    <item>
+        <color android:color="#F0F0F0" />
+    </item>
+
+    <!-- Imagine full-screen pe fundal -->
+    <item>
+        <bitmap
+            android:src="@drawable/image1"
+            android:gravity="fill"
+            android:alpha="0.3"
+            android:tileMode="disabled" />
+    </item>
+</layer-list>
