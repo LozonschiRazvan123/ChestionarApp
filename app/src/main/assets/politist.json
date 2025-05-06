@@ -1,0 +1,395 @@
+[
+  {
+    "text": "Ce comportament este corect în situaţia prezentată, dacă vă aflaţi la volanul autoturismului verde?",
+    "options": [
+      " intraţi cu atenţie în intersecţie şi viraţi numai la stânga;",
+      " opriţi şi nu intraţi în intersecţie;",
+      " aveţi voie să viraţi la dreapta."
+    ],
+    "correct": [
+      1
+    ],
+    "image": "imagini/762.jpeg",
+    "imageName": "762.jpeg"
+  },
+  {
+    "text": "La semnalul dat de personalul autorizat din zona lucrărilor pe drumurile publice, prin rotirea vioaie a brațului, aveți obligația:",
+    "options": [
+      " să măriți viteza de deplasare a vehiculului;",
+      " să ocoliți obstacolul creat în carosabil, circulând în sens giratoriu;",
+      " să ocoliți obstacolul indicat de acesta."
+    ],
+    "correct": [
+      0
+    ],
+    "image": null,
+    "imageName": null
+  },
+  {
+    "text": "Semnalul polițistului indică:",
+    "options": [
+      " circulația pe direcția înainte nu este posibilă;",
+      " oprire;",
+      " circulația prin intersecție se va face cu viteză redusă."
+    ],
+    "correct": [
+      1
+    ],
+    "image": "imagini/497.jpeg",
+    "imageName": "497.jpeg"
+  },
+  {
+    "text": "În fața dvs. s-a produs un accident rutier care este cercetat de poliție, iar circulația se desfășoară anevoios, pe un singur sens. Cum veți proceda?",
+    "options": [
+      " vă continuați drumul cu atenție, respectând indicațiile polițistului rutier;",
+      " vă continuați drumul cu viteză sporită, pentru a nu bloca traficul rutier;",
+      " reduceți viteza și opriți în locul accidentului, pentru a vedea ce s-a întâmplat."
+    ],
+    "correct": [
+      0
+    ],
+    "image": null,
+    "imageName": null
+  },
+  {
+    "text": "Aveți obligația de a opri imediat vehiculul la semnalele adresate de:",
+    "options": [
+      " polițiștii comunitari;",
+      " personalul autorizat din cadrul serviciului examinări;",
+      " personalul autorizat din zona lucrărilor pe drumurile publice."
+    ],
+    "correct": [
+      2
+    ],
+    "image": null,
+    "imageName": null
+  },
+  {
+    "text": "Ce obligații are conducătorul unui vehicul care circulă în zona de frontieră?",
+    "options": [
+      " să oprească imediat vehiculul la semnalele regulamentare ale polițiștilor de frontieră aflați în zona de competență;",
+      " să reducă viteza sub limita legală;",
+      " să circule cu faza de întâlnire în funcțiune, deoarece se află în zona de frontieră."
+    ],
+    "correct": [
+      0
+    ],
+    "image": null,
+    "imageName": null
+  },
+  {
+    "text": "Ce semnificație are, după coborârea brațelor, poziția corpului unui polițist care dirijează circulația, pentru participanții la trafic care circulă din fața și spatele său?",
+    "options": [
+      " nicio semnificație;",
+      " permisiunea de a circula;",
+      " oprire."
+    ],
+    "correct": [
+      2
+    ],
+    "image": null,
+    "imageName": null
+  },
+  {
+    "text": "Brațele întinse orizontal, ale polițistului care dirijează circulația, semnifică:",
+    "options": [
+      " oprire pentru toți participanții la trafic care, indiferent de sensul lor de mers, circulă din direcția sau direcțiile intersectate de brațele întinse ale acestuia;",
+      " oprire pentru toți participanții la trafic care circulă numai din spatele acestuia;",
+      " oprire pentru toți participanții la trafic care circulă numai din fața acestuia."
+    ],
+    "correct": [
+      0
+    ],
+    "image": null,
+    "imageName": null
+  },
+  {
+    "text": "Viteza se reduce la semnalul:",
+    "options": [
+      " personalului autorizat din zona lucrărilor drumului public;",
+      " agentului de cale ferată;",
+      " poliţistului de frontieră."
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "image": null,
+    "imageName": null
+  },
+  {
+    "text": "Ce obligații revin conducătorilor de vehicule la trecerea autovehiculelor cu regim de circulație prioritară, care au în funcțiune mijloacele speciale de avertizare luminoasă de culoare roșie și pe cele de avertizare sonoră:",
+    "options": [
+      " să oprească imediat pe acostament sau, în lipsa acestuia, cât mai aproape de marginea drumului sau de bordura trotuarului, în sensul de deplasare;",
+      " să reducă viteza și să circule cât mai aproape de marginea drumului în sensul de deplasare;",
+      " să scoată vehiculul în afara drumului, indiferent prin ce mijloace."
+    ],
+    "correct": [
+      0
+    ],
+    "image": null,
+    "imageName": null
+  },
+  {
+    "text": "Cum procedați la semnalul polițistului cu brațul ridicat vertical?",
+    "options": [
+      " opriți, indiferent din ce direcție vă apropiați, și așteptați următorul său semnal;",
+      " reduceți viteza și circulați în direcția permisă de poziția brațului;",
+      " reduceți viteza și îl ocoliți."
+    ],
+    "correct": [
+      0
+    ],
+    "image": null,
+    "imageName": null
+  },
+  {
+    "text": "Ce obligații aveți la semnalul membrilor patrulelor școlare de circulație, la trecerile pentru pietoni din apropierea unităților de învățământ?",
+    "options": [
+      " să reduceți viteza și să circulați cu atenție;",
+      " să treceți pe banda de lângă axul drumului;",
+      " să opriți."
+    ],
+    "correct": [
+      2
+    ],
+    "image": null,
+    "imageName": null
+  },
+  {
+    "text": "În situația în care polițistul se află cu fața la un autovehicul care se apropie, având brațul drept întins orizontal, conducătorul auto trebuie:",
+    "options": [
+      " să oprească, deoarece semnalul i se adresează;",
+      " să continue deplasarea, deoarece semnalul nu i se adresează;",
+      " să schimbe direcția de mers spre stânga."
+    ],
+    "correct": [
+      1
+    ],
+    "image": null,
+    "imageName": null
+  },
+  {
+    "text": "Aveți obligația de a opri imediat vehiculul la semnalele adresate de:",
+    "options": [
+      " polițiștii de frontieră;",
+      " polițiștii comunitari;",
+      " personalul autorizat din cadrul serviciului de examinări."
+    ],
+    "correct": [
+      0
+    ],
+    "image": null,
+    "imageName": null
+  },
+  {
+    "text": "Dacă polițistul se află în intersecție cu fața către conducătorul vehiculului și îi adresează acestuia un alt semnal decât poziția sa, care înseamnă „Oprire“, conducătorul trebuie:",
+    "options": [
+      " să respecte semnalul polițistului;",
+      " să continue mersul, deoarece semnele polițistului sunt contradictorii;",
+      " să oprească și să aștepte semnalul pentru continuarea deplasării."
+    ],
+    "correct": [
+      0
+    ],
+    "image": null,
+    "imageName": null
+  },
+  {
+    "text": "Scoaterea, pe partea laterală din dreapta, a bastonului reflectorizant de către polițistul care însoțește o coloană oficială de autovehicule obligă conducătorii care circulă în spatele acesteia:",
+    "options": [
+      " să reducă imediat viteza și să circule cât mai aproape de marginea drumului;",
+      " să oprească cât mai aproape de marginea drumului, iar acolo unde este posibil, să scoată vehiculul în afara părții carosabile;",
+      " să reducă viteza și să iasă în afara drumului imediat ce este posibil, prin viraj la dreapta."
+    ],
+    "correct": [
+      1
+    ],
+    "image": null,
+    "imageName": null
+  },
+
+  {
+    "text": "Ce autovehicule pot pătrunde în intersecţie?",
+    "options": [
+      " troleibuzul şi motocicleta;",
+      " motocicleta şi autocamionul;",
+      " troleibuzul."
+    ],
+    "correct": [
+      1
+    ],
+    "image": "imagini/811.jpeg",
+    "imageName": "811.jpeg"
+  },
+  {
+    "text": "Care dintre autovehicule au dreptul să intre în intersecție?",
+    "options": [
+      " autocamionul și motocicleta;",
+      " autoturismul și autocamionul;",
+      " autoturismul și motocicleta."
+    ],
+    "correct": [
+      2
+    ],
+    "image": "imagini/829.jpeg",
+    "imageName": "829.jpeg"
+  },
+  {
+    "text": "Ce indică semnalul agentului de circulație?",
+    "options": [
+      " reduceți viteza;",
+      " oprire;",
+      " măriți viteza."
+    ],
+    "correct": [
+      1
+    ],
+    "image": "imagini/844.jpeg",
+    "imageName": "844.jpeg"
+  },
+  {
+    "text": "Aveți obligația de a opri imediat vehiculul la semnalele adresate de:",
+    "options": [
+      " îndrumătorii de circulație ai Ministerului Apărării;",
+      " un conducător auto rămas în pană, pentru a-l remorca;",
+      " polițiștii comunitari."
+    ],
+    "correct": [
+      0
+    ],
+    "image": null,
+    "imageName": null
+  },
+  {
+    "text": "Ce trebuie să facă conducătorul auto în situația prezentată?",
+    "options": [
+      " să reducă viteza;",
+      " să oprească;",
+      " să nu depășească motocicleta de poliție."
+    ],
+    "correct": [
+      0
+    ],
+    "image": "imagini/871.jpeg",
+    "imageName": "871.jpeg"
+  },
+  {
+    "text": "Sunteți obligat să opriți vehiculul pe care îl conduceți:",
+    "options": [
+      " la semnalul polițistului care dirijează circulația;",
+      " la semnalul polițistului, dar numai dacă acesta corespunde semnalului de culoare roșie al semaforului;",
+      " la semnalul pietonilor care traversează strada pe la colțul intersecției fără marcaje."
+    ],
+    "correct": [
+      0
+    ],
+    "image": null,
+    "imageName": null
+  },
+  {
+    "text": "Semnalul polițistului rutier aflat într-un autovehicul al poliției, efectuat cu brațul, cu sau fără baston reflectorizant, scos pe partea laterală dreaptă a vehiculului, semnifică:",
+    "options": [
+      " oprire pentru conducătorii vehiculelor care circulă în spatele autovehiculului poliției;",
+      " reducerea vitezei de către cei care circulă în spatele autovehiculului poliției;",
+      " semnalul se adresează celor care circulă din sens opus."
+    ],
+    "correct": [
+      0
+    ],
+    "image": null,
+    "imageName": null
+  },
+  {
+    "text": "Cum trebuie să procedați în această situație?",
+    "options": [
+      " reduceți viteza și vă continuați deplasarea;",
+      " opriți și așteptați următorul semnal al polițistului;",
+      " circulați obligatoriu pe direcția indicată de brațul polițistului."
+    ],
+    "correct": [
+      1
+    ],
+    "image": "imagini/945.jpeg",
+    "imageName": "945.jpeg"
+  },
+  {
+    "text": "Când este obligat conducătorul unui vehicul să oprească?",
+    "options": [
+      " la semnalul conducătorului grupurilor organizate;",
+      " la semnalul patrulelor școlare de circulație la trecerile pentru pietoni din apropierea unităților școlare;",
+      " când se apropie de o intersecție sau când este semnalizat cu farurile de un alt participant la trafic."
+    ],
+    "correct": [
+      1
+    ],
+    "image": null,
+    "imageName": null
+  },
+  {
+    "text": "Cum procedați în situația în care semnalul roșu al semaforului este în funcțiune, iar polițistul vă adresează semnalul de a trece?",
+    "options": [
+      " așteptați apariția semnalului de culoare verde, care vă permite să circulați cu autovehiculul prin intersecție;",
+      " atrageți atenția polițistului că există neconcordanță între semnalul său și cel al semaforului;",
+      " respectați semnalul polițistului."
+    ],
+    "correct": [
+      2
+    ],
+    "image": null,
+    "imageName": null
+  },
+  {
+    "text": "Când polițistul se află cu spatele la vehiculul care se apropie și cu brațul stâng întins orizontal, conducătorul acestuia trebuie:",
+    "options": [
+      " să continue deplasarea, deoarece semnalul de oprire nu i se adresează;",
+      " să schimbe direcția de mers spre stânga;",
+      " să oprească, deoarece semnalul i se adresează."
+    ],
+    "correct": [
+      0
+    ],
+    "image": null,
+    "imageName": null
+  },
+  {
+    "text": "Polițistul nu permite trecerea:",
+    "options": [
+      " tramvaiului;",
+      " camionului;",
+      " autoturismului verde."
+    ],
+    "correct": [
+      0
+    ],
+    "image": "imagini/1076.jpeg",
+    "imageName": "1076.jpeg"
+  },
+  {
+    "text": "Semnalul polițistului indică:",
+    "options": [
+      " reduceți viteza;",
+      " măriți viteza;",
+      " mergeți cu prudență."
+    ],
+    "correct": [
+      1
+    ],
+    "image": "imagini/1079.jpeg",
+    "imageName": "1079.jpeg"
+  },
+  {
+    "text": "Care dintre vehicule trebuie să oprească la semnalul polițistului?",
+    "options": [
+      " toate vehiculele;",
+      " tramvaiele și autoturismul;",
+      " bicicleta."
+    ],
+    "correct": [
+      1
+    ],
+    "image": "imagini/1107.jpeg",
+    "imageName": "1107.jpeg"
+  }
+]

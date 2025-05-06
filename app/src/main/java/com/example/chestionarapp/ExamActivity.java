@@ -19,9 +19,9 @@ public class ExamActivity extends AppCompatActivity {
         setContentView(R.layout.activity_exam);
 
         allQuestions = new ArrayList<>();
-        allQuestions.addAll(QuestionLoader.loadQuestions(this, "semne.json"));
+        allQuestions.addAll(QuestionLoader.loadQuestions(this, "Semne.json"));
         allQuestions.addAll(QuestionLoader.loadQuestions(this, "prioritate.json"));
-        allQuestions.addAll(QuestionLoader.loadQuestions(this, "conducere.json"));
+        allQuestions.addAll(QuestionLoader.loadQuestions(this, "politist.json"));
 
         Collections.shuffle(allQuestions);
         examQuestions = allQuestions.subList(0, Math.min(26, allQuestions.size()));

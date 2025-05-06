@@ -1,20 +1,392 @@
 [
   {
-    "text": "Cine are prioritate într-o intersecție nedirijată?",
+    "text": "La intersecția nedirijată dintre un drum național și unul județean, comunal sau local, prioritatea de trecere se acordă:",
     "options": [
-      "Vehiculul care vine din dreapta",
-      "Vehiculul mai mare",
-      "Vehiculul mai rapid"
+      "vehiculelor care circulă pe drumul județean, comunal sau local;",
+      "vehiculelor care vin din dreapta;",
+      "vehiculelor care circulă pe drumul național."
     ],
-    "correct": [0]
+    "correct": [
+      2
+    ],
+    "image": null,
+    "imageName": null
   },
   {
-    "text": "Ce semn acordă prioritate?",
+    "text": "La ieșirea din zonele rezidențiale sau pietonale, sunteți obligat să acordați prioritate:",
     "options": [
-      "STOP",
-      "Cedează trecerea",
-      "Interzis"
+      "autovehiculelor;",
+      "pietonilor de pe sensul opus de circulație;",
+      "tuturor vehiculelor cu care vă intersectați."
     ],
-    "correct": [0, 1]
+    "correct": [
+      2
+    ],
+    "image": null,
+    "imageName": null
+  },
+  {
+    "text": "În cazul în care, într-o intersecție, lângă semaforul în stare de funcționare este instalat indicatorul „Oprire“, sunteți obligat să respectați:",
+    "options": [
+      "semnificația indicatorului;",
+      "regula priorității de dreapta;",
+      "semnificația luminii semaforului."
+    ],
+    "correct": [
+      2
+    ],
+    "image": null,
+    "imageName": null
+  },
+  {
+    "text": "În ce situații sunteți obligat să acordați prioritate de trecere?",
+    "options": [
+      "într-o intersecție nedirijată, atunci când pătrundeți pe un drum național, venind de pe un drum județean;",
+      "la întâlnirea indicatorului „Drum cu prioritate“;",
+      "la întâlnirea pietonilor aflați pe sensul de mers opus."
+    ],
+    "correct": [
+      0
+    ],
+    "image": null,
+    "imageName": null
+  },
+  {
+    "text": "Conducătorii de vehicule trebuie să respecte regulile de circulație, generale și particulare, în următoarea ordine:",
+    "options": [
+      "semnalele, indicațiile și dispozițiile polițistului rutier; semnalele speciale de avertizare, luminoase sau sonore, ale autovehiculelor cu regim de circulație prioritară; semnalizarea temporară;",
+      "semnalele, indicațiile și dispozițiile polițistului rutier; semnalizarea temporară; semnalele speciale de avertizare, luminoase sau sonore, ale autovehiculelor cu regim de circulație prioritară;",
+      "semnalele speciale de avertizare, luminoase sau sonore, ale autovehiculelor cu regim de circulație prioritară; semnalele, indicațiile și dispozițiile polițistului rutier; semnalizarea temporară."
+    ],
+    "correct": [
+      0
+    ],
+    "image": null,
+    "imageName": null
+  },
+  {
+    "text": "Care dintre cele trei vehicule va trece ultimul prin intersecția din imagine?",
+    "options": [
+      "autoturismul;",
+      "autocamionul;",
+      "motocicleta."
+    ],
+    "correct": [
+      0
+    ],
+    "image": "imagini/448.jpeg",
+    "imageName": "448.jpeg"
+  },
+  {
+    "text": "Cum veți proceda dacă la intrarea într-o intersecție semaforul este pe semnalul de culoare verde, dar aceasta este blocată din cauza aglomerației?",
+    "options": [
+      "vă continuați deplasarea, deoarece semnalul verde vă permite acest lucru;",
+      "claxonați și găsiți o modalitate de a avansa printre celelalte vehicule;",
+      "opriți și așteptați deblocarea, după care pătrundeți în intersecție pe semnalul verde al semaforului."
+    ],
+    "correct": [
+      2
+    ],
+    "image": null,
+    "imageName": null
+  },
+  {
+    "text": "Cu ce viteză se poate circula în apropierea unei intersecţii?",
+    "options": [
+      "limita maximă de viteză va fi respectată doar în cazul intersecţiilor dirijate;",
+      "cu o viteză care să permită oprirea, pentru a acorda prioritate de trecere participanţilor la trafic care au acest drept;",
+      "limita maximă de viteză în localităţi va fi de 50 km/h, iar în afara localităţilor de 130 km/h."
+    ],
+    "correct": [
+      1
+    ],
+    "image": null,
+    "imageName": null
+  },
+  {
+    "text": "Cum procedează conducătorul de vehicul când iese dintr-o curte sau dintr-un garaj pe un drum public?",
+    "options": [
+      "acordă prioritate pietonilor și vehiculelor aflate în mers;",
+      "solicită să fie pilotat de o altă persoană;",
+      "folosește avertizorul sonor ziua și pe cel luminos, noaptea."
+    ],
+    "correct": [
+      0
+    ],
+    "image": null,
+    "imageName": null
+  },
+  {
+    "text": "Pe un drum cu prioritate, conducătorul de vehicul întâlnește în intersecție marcajul de trecere pentru pietoni. Este obligat să acorde prioritate?",
+    "options": [
+      "da, pietonilor angajați în traversarea drumului pe trecerea semnalizată și aflați pe sensul lui de mers;",
+      "nu, deoarece circulă pe un drum prioritar;",
+      "da, atât pietonilor, cât și vehiculelor care se apropie din sens opus și care schimbă direcția de mers spre stânga."
+    ],
+    "correct": [
+      0
+    ],
+    "image": null,
+    "imageName": null
+  },
+  {
+    "text": "În ce ordine vor circula autovehiculele prin intersecţia prezentată?",
+    "options": [
+      "troleibuzul, tramvaiul, autoturismul;",
+      "tramvaiul, autoturismul, troleibuzul;",
+      "tramvaiul, troleibuzul, autoturismul."
+    ],
+    "correct": [
+      1
+    ],
+    "image": "imagini/480.jpeg",
+    "imageName": "480.jpeg"
+  },
+  {
+    "text": "În ce ordine vor trece prin intersecție cele trei autoturisme?",
+    "options": [
+      "roșu, albastru, verde;",
+      "verde, roșu, albastru;",
+      "albastru, roșu, verde."
+    ],
+    "correct": [
+      1
+    ],
+    "image": "imagini/499.jpeg",
+    "imageName": "499.jpeg"
+  },
+  {
+    "text": "Care dintre autovehiculele din imagine au prioritate de trecere?",
+    "options": [
+      "autobuzul și motocicleta;",
+      "motocicleta și autocamionul;",
+      "autobuzul și autoturismul."
+    ],
+    "correct": [
+      1
+    ],
+    "image": "imagini/515.jpeg",
+    "imageName": "515.jpeg"
+  },
+  {
+    "text": "Care este ordinea de trecere prin intersecţia din imagine?",
+    "options": [
+      "tramvaiul, motocicleta, autoturismul;",
+      "motocicleta, autoturismul, tramvaiul;",
+      "motocicleta, tramvaiul, autoturismul."
+    ],
+    "correct": [
+      1
+    ],
+    "image": "imagini/516.jpeg",
+    "imageName": "516.jpeg"
+  },
+  {
+    "text": "Autobuzul din față semnalizează ieșirea din stația prevăzută cu alveolă. Cum trebuie să procedați?",
+    "options": [
+      "îl ocoliți cât mai mult, pentru a proteja pietonii;",
+      "reduceți viteza și la nevoie opriți, pentru a permite plecarea din stație a autobuzului;",
+      "vă continuați deplasarea, deoarece nu aveți restricții."
+    ],
+    "correct": [
+      1
+    ],
+    "image": "imagini/526.jpeg",
+    "imageName": "526.jpeg"
+  },
+  {
+    "text": "Conducătorul unui vehicul este obligat să acorde prioritate de trecere într-o intersecție nedirijată dacă:",
+    "options": [
+      "pătrunde pe un drum județean, venind de pe un drum național;",
+      "pătrunde pe un drum național, venind de pe un drum județean, comunal sau local;",
+      "pătrunde pe un drum comunal sau local, venind de pe un drum județean."
+    ],
+    "correct": [
+      1
+    ],
+    "image": null,
+    "imageName": null
+  },
+  {
+    "text": "La plecarea de pe loc cu vehiculul, vă revin următoarele obligații:",
+    "options": [
+      "să evitați ambalarea excesivă a motorului;",
+      "să evitați bruscarea comenzilor vehiculului;",
+      "să acordați prioritate de trecere vehiculelor care circulă pe drum, indiferent de direcția de mers."
+    ],
+    "correct": [
+      2
+    ],
+    "image": null,
+    "imageName": null
+  },
+  {
+    "text": "Care dintre cele trei vehicule va trece ultimul prin intersecție?",
+    "options": [
+      "motocicleta;",
+      "autoturismul;",
+      "tramvaiul."
+    ],
+    "correct": [
+      1
+    ],
+    "image": "imagini/602.jpeg",
+    "imageName": "602.jpeg"
+  },
+  {
+    "text": "Precizați în care situație vehiculele enumerate mai jos au prioritate de trecere:",
+    "options": [
+      "vehiculele aflate în sensul giratoriu, față de cele care se pregătesc să intre în sensul giratoriu;",
+      "autovehiculele din serviciile regulate de transport public, care se pun în mișcare din stație;",
+      "vehiculele care execută manevra de întoarcere."
+    ],
+    "correct": [
+      0
+    ],
+    "image": null,
+    "imageName": null
+  },
+  {
+    "text": "Precizați care vehicule sunt exceptate de la obligația acordării priorității de trecere:",
+    "options": [
+      "cele care se pun în mișcare de pe loc față de cele care circulă;",
+      "autovehiculele din serviciile regulate de transport public, care se pun în mișcare din stația prevăzută cu alveolă;",
+      "cele care ies din curți, ganguri sau garaje."
+    ],
+    "correct": [
+      1
+    ],
+    "image": null,
+    "imageName": null
+  },
+  {
+    "text": "Ce obligații aveți la trecerea pentru pietoni, pe sensul dvs. de mers?",
+    "options": [
+      "să acodați prioritate de trecere și pietonilor care circulă pe celălalt sens de mers;",
+      "să reduceți viteza și să vă strecurați printre pietoni;",
+      "să acordați prioritate de trecere pietonilor aflați în traversare."
+    ],
+    "correct": [
+      2
+    ],
+    "image": null,
+    "imageName": null
+  },
+  {
+    "text": "Cum procedați în intersecția care urmează?",
+    "options": [
+      "traversați fără să acordați prioritate;",
+      "traversați după ce acordați prioritate de dreapta;",
+      "traversați după ce acordați prioritate de stânga."
+    ],
+    "correct": [
+      0
+    ],
+    "image": "imagini/652.jpeg",
+    "imageName": "652.jpeg"
+  },
+  {
+    "text": "Cum procedați la apropierea de o intersecție în care semnalul luminos ori un indicator de prioritate permite intrarea, dar în care riscați să rămâneți imobilizat din cauza aglomerării circulației?",
+    "options": [
+      "vă este interzisă intrarea în intersecție;",
+      "vă continuați deplasarea, deoarece aveți prioritate;",
+      "nu vă revine nicio obligație."
+    ],
+    "correct": [
+      0
+    ],
+    "image": null,
+    "imageName": null
+  },
+  {
+    "text": "Care dintre vehicule trebuie să acorde prioritate pietonilor?",
+    "options": [
+      "vehiculul pe care îl conduceți;",
+      "autocamionul galben;",
+      "ambele vehicule."
+    ],
+    "correct": [
+      0
+    ],
+    "image": "imagini/664.jpeg",
+    "imageName": "664.jpeg"
+  },
+  {
+    "text": "Cum trebuie să procedați în acest caz?",
+    "options": [
+      "accelerați, pentru a trece prin fața pietonilor;",
+      "dați un semnal scurt de avertizare, pentru ca pietonii să nu se angajeze în traversare;",
+      "opriți, pentru a permite pietonilor traversarea."
+    ],
+    "correct": [
+      2
+    ],
+    "image": "imagini/688.jpeg",
+    "imageName": "688.jpeg"
+  },
+  {
+    "text": "Cum procedați în situația dată?",
+    "options": [
+      "frânați din timp, pentru a acorda prioritate de trecere pietonilor;",
+      "traversați strada accelerat;",
+      "traversați marcajul pentru pietoni înaintea acestora."
+    ],
+    "correct": [
+      0
+    ],
+    "image": "imagini/689.jpeg",
+    "imageName": "689.jpeg"
+  },
+  {
+    "text": "Care dintre cele două vehicule va intra primul în intersecție?",
+    "options": [
+      "motocicleta, deoarece se deplasează mai repede;",
+      "motocicleta, deoarece se deplasează pe direcția înainte;",
+      "autoturismul, deoarece se deplasează pe drumul prioritar."
+    ],
+    "correct": [
+      2
+    ],
+    "image": "imagini/702.jpeg",
+    "imageName": "702.jpeg"
+  },
+  {
+    "text": "Ce regulă de prioritate se aplică într-o intersecție nedirijată din afara localității?",
+    "options": [
+      "prioritatea vehiculului cu regim superior de viteză;",
+      "prioritatea drumului principal;",
+      "prioritatea de dreapta."
+    ],
+    "correct": [
+      2
+    ],
+    "image": null,
+    "imageName": null
+  },
+  {
+    "text": "În ce ordine vor trece autovehiculele prin intersecţie?",
+    "options": [
+      "motocicleta, tramvaiul 1, tramvaiul 2, autocamionul;",
+      "motocicleta, autocamionul, tramvaiul 2, tramvaiul 1;",
+      "tramvaiul 1, tramvaiul 2, motocicleta, autocamionul."
+    ],
+    "correct": [
+      1
+    ],
+    "image": "imagini/722.jpeg",
+    "imageName": "722.jpeg"
+  },
+  {
+    "text": "Vă puteți apropia de vehiculul din față?",
+    "options": [
+      "da;",
+      "nu, pentru că astfel blocați intersecția;",
+      "legea nu prevede obligații în această situație."
+    ],
+    "correct": [
+      1
+    ],
+    "image": "imagini/750.jpeg",
+    "imageName": "750.jpeg"
   }
 ]

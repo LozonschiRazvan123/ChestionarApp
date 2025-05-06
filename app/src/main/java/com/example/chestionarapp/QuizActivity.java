@@ -85,7 +85,7 @@ public class QuizActivity extends AppCompatActivity {
                 if (correct.contains(i)) {
                     options[i].setTextColor(getResources().getColor(android.R.color.holo_green_dark));
                 } else if (selected.contains(i)) {
-                    options[i].setTextColor(getResources().getColor(android.R.color.holo_red_dark));
+                    options[i].setTextColor(getResources().getColor(android.R.color.holo_red_light));
                 }
             }
 
