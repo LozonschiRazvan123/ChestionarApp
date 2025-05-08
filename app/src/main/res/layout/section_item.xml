@@ -1,17 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/bg_section_item"
-    android:padding="16dp"
     android:orientation="vertical"
-    android:layout_marginTop="12dp"> <!-- AICI adăugăm spațiu de sus -->
+    android:padding="16dp"
+    android:layout_marginTop="12dp"
+    android:background="@drawable/bg_section_item">
 
+    <!-- Numele secțiunii -->
     <TextView
         android:id="@+id/sectionName"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Nume secțiune"
         android:textSize="18sp"
         android:textStyle="bold"
         android:textColor="@android:color/black" />
+
+    <!-- Butoane de acțiune -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnQuiz"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Începe Quiz" />
+
+        <Button
+            android:id="@+id/btnLegislation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Vezi Legislația"
+            android:layout_marginStart="12dp" />
+    </LinearLayout>
 </LinearLayout>

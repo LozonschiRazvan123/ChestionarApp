@@ -6,8 +6,6 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
-
-
     <!-- 🔄 Linia cu scor și progres, cu fundal mov -->
     <LinearLayout
         android:id="@+id/statusRow"

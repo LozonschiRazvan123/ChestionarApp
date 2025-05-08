@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.chestionarapp"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
@@ -32,6 +32,7 @@ android {
 }
 
 dependencies {
+    implementation("org.apache.poi:poi-ooxml:5.2.3")
     implementation("androidx.cardview:cardview:1.0.0")
     implementation("com.google.code.gson:gson:2.10.1")
     implementation(libs.appcompat)
