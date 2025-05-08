@@ -19,12 +19,13 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this, SectionQuizActivity.class);
             startActivity(intent);
         });
-
-      /*  examBtn.setOnClickListener(v -> {
-            Intent intent = new Intent(this, ExamActivity.class);
+        Button examBtn = findViewById(R.id.examBtn);
+        examBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ExamActivity.class);
             startActivity(intent);
         });
 
+/*
         legislationBtn.setOnClickListener(v -> {
             Intent intent = new Intent(this, LegislationActivity.class);
             startActivity(intent);

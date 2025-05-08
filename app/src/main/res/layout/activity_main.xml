@@ -1,26 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="16dp"
+    android:padding="32dp"
     android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chestionar Auto B"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp" />
+
+    <Button
+        android:id="@+id/examBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simulare Examen Final"
+        android:backgroundTint="#6A1B9A"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:background="@drawable/rounded_button" />
 
     <Button
         android:id="@+id/sectionQuizBtn"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Chestionare pe secțiuni" />
+        android:text="Chestionare pe secțiuni"
+        android:backgroundTint="#6A1B9A"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:background="@drawable/rounded_button" />
 
-    <!-- <Button
-         android:id="@+id/examBtn"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:text="Simulare examen" />
-
-     <Button
-         android:id="@+id/legislationBtn"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:text="Legislație rutieră" />-->
 </LinearLayout>

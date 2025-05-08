@@ -1,16 +1,171 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:padding="16dp"
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white">
 
-    <TextView
-        android:id="@+id/timerText"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Timp rămas: 30:00"
-        android:textSize="16sp"
-        android:layout_marginBottom="16dp" />
+        android:padding="16dp">
 
-    <!-- Poți copia layout-ul din activity_quiz.xml aici -->
-</LinearLayout>
+        <!-- 🔄 Bara scor + progres -->
+        <LinearLayout
+            android:id="@+id/statusRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#4A148C"
+            android:padding="8dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/correctCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✔ 0"
+                android:textColor="#00FF00"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginEnd="16dp" />
+
+            <TextView
+                android:id="@+id/progressText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Întrebarea 1 din 26"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/wrongCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✖ 0"
+                android:textColor="#FF4444"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+        <!-- ⏱ Timer examen -->
+        <TextView
+            android:id="@+id/examTimerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Timp rămas: 30:00"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="12dp" />
+
+        <!-- 📋 Întrebare -->
+        <!-- 📋 Întrebare + Imagine în CardView -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/examQuestionText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Întrebare"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="8dp" />
+
+                <ImageView
+                    android:id="@+id/examQuestionImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- ✅ Răspunsuri -->
+        <CheckBox
+            android:id="@+id/examOptionA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Răspuns A"
+            android:layout_marginBottom="8dp" />
+
+        <CheckBox
+            android:id="@+id/examOptionB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Răspuns B"
+            android:layout_marginBottom="8dp" />
+
+        <CheckBox
+            android:id="@+id/examOptionC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Răspuns C"
+            android:layout_marginBottom="8dp" />
+
+        <!-- 🎯 Verificare -->
+        <Button
+            android:id="@+id/btnCheckExamAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verifică răspunsul"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp" />
+
+        <!-- 🔄 Navigare -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="12dp">
+
+            <Button
+                android:id="@+id/btnSkip"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sari peste" />
+
+            <Button
+                android:id="@+id/btnExamNext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Următoarea"
+                android:enabled="false" />
+        </LinearLayout>
+
+        <!-- 🧪 Buton test rezultat -->
+        <Button
+            android:id="@+id/btnCheatPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CheatPass"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
