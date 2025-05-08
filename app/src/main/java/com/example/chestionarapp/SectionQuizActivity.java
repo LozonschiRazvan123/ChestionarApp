@@ -10,7 +10,7 @@ public class SectionQuizActivity extends AppCompatActivity {
 
     String[] sections = {"Semne Rutiere", "Prioritate", "Semnale Politist"};
     String[] jsonFiles = {"Semne.json", "prioritate.json", "politist.json"};
-    String[] legislationFiles = {"legislatie_semne.pdf", "prioritate.docx", "politist.docx"};
+    String[] legislationFiles = {"legislatie_semne.pdf", "prioritate.pdf", "politist.pdf"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
