@@ -17,10 +17,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:background="#4A148C"
-            android:padding="8dp"
+            android:background="#472368"
             android:gravity="center_vertical"
-            android:layout_marginBottom="12dp">
+            android:padding="8dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="4dp">
 
             <TextView
                 android:id="@+id/correctCount"

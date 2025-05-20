@@ -262,19 +262,7 @@
     "image": null,
     "imageName": null
   },
-  {
-    "text": "Ce trebuie să facă conducătorul auto în situația prezentată?",
-    "options": [
-      " să reducă viteza;",
-      " să oprească;",
-      " să nu depășească motocicleta de poliție."
-    ],
-    "correct": [
-      0
-    ],
-    "image": "imagini/871.jpeg",
-    "imageName": "871.jpeg"
-  },
+
   {
     "text": "Sunteți obligat să opriți vehiculul pe care îl conduceți:",
     "options": [
